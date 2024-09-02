@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
@@ -13,25 +16,26 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@rocketseat/eslint-config": "^2.2.2",
-    "@types/node": "^22.5.1",
-    "@types/supertest": "^6.0.2",
-    "eslint": "^8.57.0",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "supertest": "^7.0.0",
-    "tsup": "^8.2.4",
-    "tsx": "^4.19.0",
-    "typescript": "^5.5.4",
-    "vitest": "^2.0.5"
-  },
   "dependencies": {
     "@fastify/cookie": "^9.4.0",
     "02-api-rest-nodejs": "file:",
     "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
     "knex": "^3.1.0",
-    "sqlite3": "^5.1.7",
+    "pg": "^8.12.0",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^22.5.1",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "sqlite3": "^5.1.7",
+    "supertest": "^7.0.0",
+    "tsup": "^8.2.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   }
 }
