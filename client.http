@@ -1,0 +1,20 @@
+GET http://localhost:3333/transactions
+
+###
+
+GET http://localhost:3333/transactions/summary
+
+###
+
+GET http://localhost:3333/transactions/5b4451b2-8fc9-4e4e-8aef-8f4e8db70d11
+
+###
+
+POST http://localhost:3333/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Freelancer",
+  "amount": 8000,
+  "type": "credit"
+}
